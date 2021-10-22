@@ -5,7 +5,7 @@ import { useGlobalContext } from './context';
 const Hero = () => {
     const { hideSubmenu } = useGlobalContext();
     return (
-        <section className="hero">
+        <section className="hero" onMouseOver={hideSubmenu}>
             <div className="hero-center">
                 <article className="hero-info">
                     <h1>
